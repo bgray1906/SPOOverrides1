@@ -1,0 +1,44 @@
+/* Test CSS for CSS Override Application Customizer */
+
+/* Add colored border to confirm CSS is loaded */
+body {
+    border-top: 5px solid #00b294 !important;
+}
+
+/* Change command bar background */
+.ms-CommandBar {
+    background-color: #f3f2f1 !important;
+    border-bottom: 2px solid #0078d4 !important;
+}
+
+/* Style the top navigation */
+.ms-HorizontalNavItems {
+    background: linear-gradient(90deg, #0078d4, #00b294) !important;
+}
+
+/* Add a corner badge */
+body::before {
+    content: "CSS ACTIVE";
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #00b294;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 12px;
+    z-index: 9999;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Highlight all links in the page */
+a {
+    text-decoration: underline !important;
+}
+
+/* Add hover effect to buttons */
+.ms-Button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
